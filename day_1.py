@@ -19,10 +19,17 @@ for line in lines:
 left_list = sorted(left_list)
 right_list = sorted(right_list)
 
-print(left_list)
+#print(left_list)
 
 for i in range(len(left_list)):
     distance = abs(int(left_list[i]) - int(right_list[i]))
     total_distance += distance
 
 print(total_distance)
+
+similarity_score = 0
+for i in range(len(left_list)):
+    similarity_multiplier = right_list.count(left_list[i])
+    similarity_score += (int(left_list[i]) * similarity_multiplier)
+
+print(similarity_score)
