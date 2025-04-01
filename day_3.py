@@ -3,7 +3,7 @@ import re
 with open("./input_text/day_3.txt") as f:
     inp = f.read()
 
-# Define regex pattern for {mul(x,y)}, do(), and don't()
+# Define regex pattern for {mul(x,y)}, do(), and don't()}
 pattern = re.compile(r"mul\(\d+,\d+\)|do\(\)|don\'t\(\)")
 
 # Find all matches
