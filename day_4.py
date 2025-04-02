@@ -8,7 +8,7 @@ lines = inp.splitlines()
 def count_xmas(line):
     count = 0
     for i in range(len(line)-3):
-        if line[i:i+4] == "xmas" or line[i:i+4][::-1] == "xmas":
+        if line[i:i+4] == "XMAS" or line[i:i+4] == "SAMX":
             count += 1 
     return count
 
